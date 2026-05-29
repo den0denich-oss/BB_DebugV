@@ -684,7 +684,8 @@ document.querySelectorAll('.tab-btn').forEach(b=>b.addEventListener('click',()=>
 
 // ============================================
 // DEBUG MENU
-// ============================================function toggleDebug() { sound.resume(); sound.playClick(); document.getElementById('debug-menu').classList.toggle('active'); }
+// ============================================
+function toggleDebug() { sound.resume(); sound.playClick(); document.getElementById('debug-menu').classList.toggle('active'); }
 function debugGiveBoxes() { state.boxCooldowns=[0,0,0,0,0]; saveState(); renderBoxes(); showToast('📦 Все ящики готовы!'); }
 function debugGiveCoins() { state.coins+=10000; state.totalCoins+=10000; saveState(); updateUI(); showToast('🪙 +10000 монет!'); }
 function debugGiveUpPoints() { state.upgradePoints+=5000; saveState(); updateUI(); renderUpgrades(); showToast('⭐ +5000 очков!'); }
