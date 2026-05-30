@@ -483,7 +483,7 @@ function showNextReward() {
   const r=rewardQueue[currentRewardIndex], p=document.getElementById('reward-popup'), c=document.getElementById('reward-card');
   document.getElementById('reward-emoji').textContent=r.emoji;
   document.getElementById('reward-name').textContent=r.name;
-  document.getElementById('reward-amount').textContent=r.type==='giftCard'?'🎁':`+${r.amount}`;
+  document.getElementById('reward-amount').textContent=r.type==='giftCard'?'':`+${r.amount}`;
   const left=rewardQueue.length-currentRewardIndex-1;
   document.getElementById('reward-left').textContent=left>0?`Осталось: ${left}`:'';
   c.className='reward-card';
